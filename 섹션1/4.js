@@ -1,12 +1,10 @@
-function solution(arr) {
-  let min = arr[0];
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
-    }
+function solution(number) {
+  let answer = 0;
+  for (let i = 1; i <= number; i++) {
+    answer += i;
   }
 
-  return min;
+  return answer;
 }
 
-console.log(solution());
+console.log(solution(10));
