@@ -34,7 +34,7 @@ function solution(arr) {
 
   let answer = arr.filter((value) => {
     for (let i = 0; i < otherThanAnswrArr.length; i++) {
-      if (value === push [i]) {
+      if (value === otherThanAnswrArr[i]) {
       } else {
         flag = true;
       }
