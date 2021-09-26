@@ -1,6 +1,7 @@
 function solution(param) {
-  let answer;
+  let answer = param.toUpperCase();
+
   return answer;
 }
-let str = "";
+let str = "ItisTimeToStudy";
 console.log(solution(str));
