@@ -1,3 +1,4 @@
+// 문제 잘못 이해
 function solution(arr) {
   let answer = 0;
   let max = 0;
