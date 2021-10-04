@@ -1,4 +1,4 @@
-function solution(p) {
+/* function solution(p) {
   let rank = [];
   let cnt = 0;
 
@@ -16,6 +16,23 @@ function solution(p) {
   }
 
   return rank;           
+} */
+
+// 정답 솔루션
+function solution(p) {
+  let n = p.length;
+  // 높은수가 없어도 1위니까, 기본 default value를 1로 둬야함
+  let answer = Array.from({ length: 5 }, () => 1);
+  for (let i = 0; i < p.length; i++) {
+    for (let j = 0; j < p.length; j++) {
+      //p[i] !== p[j] 해줄 필요가 없는게 어차피 크기가 큰 조건을 걸면 같은건 다 걸러지니깐.
+
+      if (p[j] > p[i]) {
+        answer[i]++;
+      }
+    }
+  }
+  return answer;
 }
 let arr = [87, 89, 92, 100, 76];
 console.log(solution(arr));
